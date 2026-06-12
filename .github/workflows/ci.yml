@@ -15,3 +15,6 @@ jobs:
 
       - name: Print Commit
         run: echo ${{ github.sha }}
+
+      - name: test
+        run: ls -la
