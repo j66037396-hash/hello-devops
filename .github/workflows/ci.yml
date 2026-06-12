@@ -16,5 +16,8 @@ jobs:
       - name: Print Commit
         run: echo ${{ github.sha }}
 
-      - name: test
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List files
         run: ls -la
